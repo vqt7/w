@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <time.h> // include time.h for measuring execution time
+#include <time.h> 
 
 #define MAX_SIZE 100
 
@@ -29,16 +29,16 @@ int main() {
         }
     }
 
-    clock_t start_time = clock(); // Measure start time
+    clock_t start_time = clock(); 
 
     warshall(n, graph);
 
-    clock_t end_time = clock(); // Measure end time
+    clock_t end_time = clock(); 
 
     double time_taken = ((double)(end_time - start_time)) / CLOCKS_PER_SEC;
     printf("Time taken for Warshall's algorithm: %f seconds\n", time_taken);
 
-    // Space Complexity: O(n^2) for the adjacency matrix
+   
     printf("Space Complexity: O(n^2)\n");
 
     printf("Transitive closure of the graph:\n");
